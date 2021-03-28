@@ -1,12 +1,11 @@
 // import logo from './logo.svg';
 import React,{Component} from 'react';
 import './App.css';
-import CreateResume from'./createResume'
 import { BrowserRouter as Router,Route, Link, Redirect } from 'react-router-dom';
 import ViewResume from './viewResume'
+import CreateResume from './createResume';
 
-// const CreateResume = () => <h2> Edit/Create Resume </h2>;
-// const ViewResume = () => <h2> View Resume </h2>;
+
 
 class App extends Component {
   render() {
@@ -20,11 +19,10 @@ class App extends Component {
             <div>
                 <Route exact path="/" render={() => (<Redirect to="/createresume"></Redirect>)}/>
                 <Route exact path="/createresume" component={CreateResume}/>
-                <Route path="/viewresume" component={ViewResume}/>
+                <Route exact path="/viewresume" component={ViewResume}/>
             </div>
           </React.Fragment>
         </Router>
-
     );
   }
 }

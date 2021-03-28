@@ -1,9 +1,19 @@
 import React,{Component} from 'react';
 
 class ViewResume extends Component {
+
+  state = {
+    resume: {}
+  }
+
+  componentDidMount() {
+    this.setState({resume: localStorage})
+    console.log(this.state.resume)
+  }
+
     render() {
       return (
-          <h2>View Resume</h2>
+          <h1>Hello</h1>
       )
     }
 }
