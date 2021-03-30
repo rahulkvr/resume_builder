@@ -2,9 +2,8 @@
 import React,{Component} from 'react';
 import './App.css';
 import { BrowserRouter as Router,Route, Link, Redirect } from 'react-router-dom';
-import ViewResume from './viewResume'
-import CreateResume from './createResume';
-
+import ViewResume from './components/viewResume'
+import CreateResume from './components/createResume';
 
 
 class App extends Component {
